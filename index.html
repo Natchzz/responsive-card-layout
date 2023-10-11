@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--stylesheets-->
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Responsive card layout</title>
+
+  </head>
+  <body>
+    <!--card container-->
+    <div class="container">
+      <!--individual card container section-->
+      <div class="photo-container-1">
+        <!--upper section of the card container-->
+        <div class="upper-section">
+          <img class="photo" src="./images/place-1.jpg">
+        </div>
+      <h2 class="title">Bencab museum</h2>
+      <p class="card-paragraph">"Personal museum which houses the collection of Ben 'BenCab' Cabrera, Philippine National Artist for Visual Arts. 
+        BenCab's collection of Philippine contemporary art and ethnography. The Museum is set in the midst of an organic
+        farm with natural water features, highlighting indigenous architecture of the Ifugao, Kalinga, and Bontoc.</p>
+      <button class="read-more">See more</button>     
+      </div>
+      <div class="photo-container-2">
+        <!--upper section of the card container-->
+        <div class="upper-section">
+          <img class="photo" src="./images/place-2.jpg">
+        </div>
+      <h2 class="title">Marlboro Hills</h2>
+      <p class="card-paragraph">Marlboro Hills is Sagada’s highest peak that has a breathtaking 360 unobstructed view of the mountain ranges. 
+        It is also a great view point of the sunrise and sea of clouds. It is also a great view point of the sunrise
+        and sea of clouds. From the jump-off point, it took us around 3 hours of trekking to reach the peak.</p>
+      <button class="read-more">See more</button>     
+      </div>
+      <div class="photo-container-3">
+        <!--upper section of the card container-->
+        <div class="upper-section">
+          <img class="photo" src="./images/place-3.jpg">
+        </div>
+      <h2 class="title">Mirador Hill and Eco Park</h2>
+      <p class="card-paragraph" >Mirador Heritage and Eco Park is one of the most visited tourist destinations in Baguio City with the 
+        vision of preserving the city heritage and its natural beauty. One of the main attractions in Mirador 
+        Heritage and Eco Park is the Mirador Hill Peace Memorial.</p>
+      <button class="read-more">See more</button>     
+      </div>
+      <div class="photo-container-4">
+        <!--upper section of the card container-->
+        <div class="upper-section">
+          <img class="photo" src="./images/place-4.jpg">
+        </div>
+      <h2 class="title">MT. Pulag</h2>
+      <p class="card-paragraph" >Luzon's highest peak at 2,928 meters (9,606 ft) above sea level, third-highest mountain in the Philippines, 
+        and the 26th-highest peak of an island on Earth. Mount Pulag is famous for its "sea of clouds" and its 
+        exceptional view of the Milky Way Galaxy at dawn, which has attracted many tourists who wish to see the "other-worldly" scenery.</p>
+      <button class="read-more">See more</button>     
+      </div>
+      <div class="photo-container-2">
+        <!--upper section of the card container-->
+        <div class="upper-section">
+          <img class="photo" src="./images/place-5.jpg">
+        </div>
+      <h2 class="title">Sagada Blue soil hills</h2>
+      <p class="card-paragraph">The Blue Soil Hills is probably one of Sagada’s best kept secrets. It’s tucked within the mountainous 
+        terrains of thousand old limestones. As its name suggests, it is a roll of hills in a lovely color of faint blue no bigger
+        than a square kilometer surrounded by towering pine trees. This stunner is evidence that despite Sagada’s quick rise to 
+        fame instantly becoming a tourist hubspot, there is still a less explored place up there where you can enjoy a time of 
+        peace and quiet.</p>
+      <button class="read-more">See more</button>     
+      </div>
+      <div class="photo-container-5">
+        <!--upper section of the card container-->
+        <div class="upper-section">
+          <img class="photo" src="./images/place-6.jpg">
+        </div>
+      <h2 class="title">Buscalan Village</h2>
+      <p class="card-paragraph" >Buscalan village is a distant village situated in the municipality of Tinglayan, Kalinga, Philippines. 
+        It is home to the Filipina national tattoo artist and living legend named Apo Whang-Od. She is a part of the Kalinga Butbut tribe with rich 
+        culture in the lush Cordillera mountains and rice terraces. Apo Whang-Od was born on Feb. 17, 1917 and presently she is 106 years old.</p>
+      <button class="read-more">See more</button>     
+      </div>
+    </div>
+    
+    <!--javaScript-->
+    <script>
+      const readMoreButtons = document.querySelectorAll(".read-more");
+      const cardParagraphs = document.querySelectorAll(".card-paragraph");
+    
+      readMoreButtons.forEach((button, index) => {
+        button.addEventListener("click", () => {
+          cardParagraphs[index].classList.toggle("show-paragraph");
+          // Toggle button text between "See more" and "See less"
+          if (button.innerText === "See more") {
+            button.innerText = "See less";
+          } else {
+            button.innerText = "See more";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

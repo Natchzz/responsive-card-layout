@@ -1,0 +1,316 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 100%;
+}
+
+h2,
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: transform .5s;
+    gap: 2px;
+
+}
+
+/*container 1 design layout*/
+.photo-container-1{
+    text-align: center;
+    border-radius: 20px 0px 0px 0px;
+    width: 33%;
+    background-color: #618264;
+    transition: transform .5s;  
+}
+
+/*header 1*/
+/*upper section photo-container design*/
+.photo-container-1 .upper-section{
+    background-color: #618264;
+    border-radius: 20px 0px 0px 0px;
+    transition: transform .5s;
+}
+
+/*upper section style*/
+.photo-container-1 .upper-section .photo,
+.photo-container-2 .upper-section .photo,
+.photo-container-3 .upper-section .photo,
+.photo-container-4 .upper-section .photo,
+.photo-container-5 .upper-section .photo{
+    transform: translateY(40px);
+    margin-top: 10px;
+    width: 90%;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px 0px;
+    transition: transform .5s;
+}
+
+/*h2 style*/
+.photo-container-1 .title,
+.photo-container-3 .title,
+.photo-container-4 .title,
+.photo-container-5 .title{
+    opacity: 0;
+    padding-top: 10px;
+    font-weight: bolder;
+    text-align: center;
+    color: #D0E7D2;
+    text-transform: uppercase;
+    transition: transform .5s;
+    transform: translateY(20px);
+}
+
+/*paragrapgh style*/
+.photo-container-1 .card-paragraph,
+.photo-container-3 .card-paragraph,
+.photo-container-4 .card-paragraph,
+.photo-container-5 .card-paragraph{
+    transform: translateY(20px);
+    color: #D0E7D2;
+    opacity: 0;
+    text-align: justify;
+    padding: 10px;
+}
+
+/*button styling*/
+.photo-container-1 .read-more,
+.photo-container-3 .read-more,
+.photo-container-4 .read-more,
+.photo-container-5 .read-more{
+    opacity: 0;
+    transform: translateX(20px);
+    font-weight: 900;
+    background-color:#D0E7D2;
+    color: #618264;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: transform .5s;
+}
+
+/*hover effects styling*/
+.photo-container-1:hover,
+.photo-container-2:hover,
+.photo-container-3:hover,
+.photo-container-4:hover,
+.photo-container-5:hover{
+    cursor: pointer;
+    transition: .5s all ease;
+    transform: scale(1.01);
+}
+
+
+/* title,paragraph, button hover effect*/
+.photo-container-1:hover .title,
+.photo-container-1:hover .card-paragraph,
+.photo-container-1:hover .read-more,
+.photo-container-2:hover .title,
+.photo-container-2:hover .card-paragraph,
+.photo-container-2:hover .read-more,
+.photo-container-3:hover .title,
+.photo-container-3:hover .card-paragraph,
+.photo-container-3:hover .read-more,
+.photo-container-4:hover .title,
+.photo-container-4:hover .card-paragraph,
+.photo-container-4:hover .read-more,
+.photo-container-5:hover .title,
+.photo-container-5:hover .card-paragraph,
+.photo-container-5:hover .read-more {
+    cursor: pointer;
+    transition: .5s all ease;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* title,paragraph, button not hover effect*/
+.photo-container-1:not(:hover) .title,
+.photo-container-1:not(:hover) .card-paragraph,
+.photo-container-1:not(:hover) .read-more,
+.photo-container-2:not(:hover) .title,
+.photo-container-2:not(:hover) .card-paragraph,
+.photo-container-2:not(:hover) .read-more,
+.photo-container-3:not(:hover) .title,
+.photo-container-3:not(:hover) .card-paragraph,
+.photo-container-3:not(:hover) .read-more,
+.photo-container-4:not(:hover) .title,
+.photo-container-4:not(:hover) .card-paragraph,
+.photo-container-4:not(:hover) .read-more,
+.photo-container-5:not(:hover) .title,
+.photo-container-5:not(:hover) .card-paragraph,
+.photo-container-5:not(:hover) .read-more  {
+    transition: transform 0.5s, opacity 0.5s;
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+.photo-container-1:hover .photo,
+.photo-container-2:hover .photo,
+.photo-container-3:hover .photo,
+.photo-container-4:hover .photo,
+.photo-container-5:hover .photo{
+    transform: translateY(0);
+}
+
+/*container 2*/
+.photo-container-2{
+    text-align: center;
+    width: 33%;
+    background-color: #B0D9B1;
+    transition: transform .5s;
+    
+}
+
+/*header 1*/
+/*upper section photo-container design*/
+.photo-container-2 .upper-section{
+    background-color: #B0D9B1;
+    transition: transform .5s;
+}
+
+/*h2 style*/
+.photo-container-2 .title{
+    opacity: 0;
+    transform: translateY(20px);
+    padding-top: 10px;
+    font-weight: bolder;
+    text-align: center;
+    color: #618264;
+    text-transform: uppercase;
+    transition: transform .5s;
+}
+
+/*paragrapgh style*/
+.photo-container-2 .card-paragraph{
+    transform: translateY(20px);
+    color: #618264;
+    opacity: 0;
+    text-align: justify;
+    padding: 10px;
+}
+
+/*button styling*/
+.photo-container-2 .read-more{
+    opacity: 0;
+    transform: translateX(20px);
+    font-weight: 900;
+    border-radius: 10px;
+    background-color:#618264;
+    color: #D0E7D2;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: transform .5s;
+}
+
+/*container 3 design layout*/
+.photo-container-3{
+    text-align: center;
+    border-radius: 0px 20px 0px 0px;
+    width: 33%;
+    background-color: #618264;
+    transition: transform .5s;
+    
+}
+
+/*header 1*/
+/*upper section photo-container design*/
+.photo-container-3 .upper-section{
+    background-color: #618264;
+    border-radius: 0px 20px 0px 0px;
+    transition: transform .5s;
+}
+
+/*container 4 design layout*/
+.photo-container-4{
+    text-align: center;
+    border-radius: 0px 0px 0px 20px;
+    width: 33%;
+    background-color: #618264;
+    transition: transform .5s;
+}
+
+/*header 1*/
+/*upper section photo-container design*/
+.photo-container-4 .upper-section{
+    background-color: #618264;
+    border-radius: 0px 0px 0px 0px;
+    transition: transform .5s;
+}
+
+/*design layout for photo-container 5*/
+.photo-container-5{
+    text-align: center;
+    border-radius: 0px 0px 20px 0px;
+    width: 33%;
+    background-color: #618264;
+    transition: transform .5s;
+    
+}
+
+/*header 1*/
+/*upper section photo-container design*/
+.photo-container-5 .upper-section{
+    background-color: #618264;
+    border-radius: 0px 0px 0px 0px;
+    transition: transform .5s;
+}
+
+@media (max-width:600px){
+    
+    .photo-container-1{
+        text-align: center;
+        border-radius: 0px;
+        width: 100%;
+        background-color: #618264;
+        transition: transform .5s;
+        
+    }
+
+    .photo-container-2{
+        text-align: center;
+        width: 100%;
+        background-color: #B0D9B1;
+        transition: transform .5s;
+        
+    }
+
+    .photo-container-3{
+        text-align: center;
+        border-radius: 0px;
+        width: 100%;
+        background-color: #618264;
+        transition: transform .5s;
+        
+    }
+
+    .photo-container-4{
+        text-align: center;
+        border-radius: 0px 0px 0px 0px;
+        width: 100%;
+        background-color: #618264;
+        transition: transform .5s;
+        
+    }
+    .photo-container-5{
+        text-align: center;
+        border-radius: 0px 0px 0px 0px;
+        width: 100%;
+        background-color: #618264;
+        transition: transform .5s;
+        
+    }
+}
+/*javascript function to show and hide the paragraph*/
+.card-paragraph {
+    display: none;
+  }
+.show-paragraph {
+    display: block;
+  }
+
